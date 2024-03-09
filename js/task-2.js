@@ -41,7 +41,7 @@ const buildGallery = parameter => {
   });
 };
 listImages.append(...buildGallery(images));
-console.log(buildGallery(images));
+buildGallery(images);
 //
 //
 //
@@ -54,7 +54,7 @@ console.log(buildGallery(images));
 //
 //
 //
-//
+//second option
 // const buildListGallery = param => {
 //  param.map(image => {
 //     const listElement = `<li class="gallery-item">

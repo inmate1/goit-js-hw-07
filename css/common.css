@@ -107,8 +107,9 @@ img {
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
-h1 {
+#name-output {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
@@ -116,5 +117,4 @@ h1 {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-h1 > span {
-}
+
