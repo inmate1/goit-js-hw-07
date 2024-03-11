@@ -266,7 +266,7 @@ h1,
   display: flex;
   border-radius: 8px;
   padding: 32px;
-  min-width: 486px;
+  width: 486px;
   min-height: 160px;
   background: #f6f6fe;
   margin: 0 auto;
