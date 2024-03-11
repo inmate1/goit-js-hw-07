@@ -12,6 +12,7 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
 h1,
 h2,
 h3,
@@ -26,7 +27,6 @@ ol {
 }
 img {
   display: block;
-  height: 100%;
   object-fit: cover;
 }
 button {
@@ -109,7 +109,10 @@ button {
   letter-spacing: 0.04em;
   color: #2e2f42;
   margin-bottom: 16px;
+
 }
+
+h1,
 #name-output {
   font-family: var(--font-family);
   font-weight: 600;
@@ -117,6 +120,7 @@ button {
   line-height: 133%;
   letter-spacing: 0.04em;
   color: #2e2f42;
+   width: 360px;
 }
 
 /* task-4 */
@@ -239,10 +243,11 @@ button {
   color: #2e2f42;
   border: 1px solid #808080;
   border-radius: 8px;
-  padding: 8px 58px 8px 62px;
+  padding: 8px 50px 8px 50px;
   width: 150px;
   height: 40px;
 }
+
 #controls > button {
   font-family: var(--font-family);
   font-weight: 500;
@@ -261,8 +266,8 @@ button {
   display: flex;
   border-radius: 8px;
   padding: 32px;
-  width: 486px;
-  height: 160px;
+  min-width: 486px;
+  min-height: 160px;
   background: #f6f6fe;
   margin: 0 auto;
 }

@@ -11,8 +11,9 @@ btn.addEventListener('click', handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-  colorBody.style.backgroundColor = getRandomHexColor();
-  outputColor.innerHTML = `<span class="color">${getRandomHexColor()}</span>`;
+  const randomColor = getRandomHexColor();
+  colorBody.style.backgroundColor = randomColor;
+  outputColor.textContent = randomColor;
 }
 
 const hoverBtn = function () {
@@ -25,9 +26,3 @@ const hoverBtn = function () {
   };
 };
 hoverBtn();
-
-// btn.addEventListener('blur', handleBlur);
-// function handleBlur(event) {
-//   colorBody.removeAttribute("style");
-//   outputColor.innerHTML = `<span class="color">-</span>`;
-// }

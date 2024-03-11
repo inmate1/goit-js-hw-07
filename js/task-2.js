@@ -41,27 +41,3 @@ const buildGallery = parameter => {
   });
 };
 listImages.append(...buildGallery(images));
-buildGallery(images);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//second option
-// const buildListGallery = param => {
-//  param.map(image => {
-//     const listElement = `<li class="gallery-item">
-//      <img class="img-item" src=${image.url} alt=${image.alt} width=360 >
-//      </li>`;
-//      listImages.insertAdjacentHTML('afterbegin', listElement);
-//   });
-// };
-
-// buildListGallery(images);

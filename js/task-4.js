@@ -4,14 +4,18 @@ form.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
   const elements = event.target.elements;
+  console.log(elements);
   let isFormValid = true;
   let info = {};
   for (let i = 0; i < elements.length - 1; i++) {
-    if (elements[i].value === '') {
+    if (elements[i].value.trim() === '') {
+      console.log(elements[i].value);
       isFormValid = false;
       break;
     } else {
-      info[elements[i].name] = elements[i].value.trim();
+      console.log(elements[i].value);
+     info[elements[i].name] = elements[i].value.trim();
+     
     }
   }
 
