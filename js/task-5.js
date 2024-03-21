@@ -26,3 +26,17 @@ const hoverBtn = function () {
   };
 };
 hoverBtn();
+////////////////////////////////////////   
+// Получаем элемент, на который хотим добавить эффект ховера
+const element = document.querySelector(".gallery-link");
+
+// Добавляем обработчики событий mouseover и mouseout
+element.addEventListener("mouseover", function() {
+  // Изменяем стиль элемента при наведении курсора
+  element.style.cursor = "url(./img/cursor.svg), auto";
+});
+
+element.addEventListener("mouseout", function() {
+  // Возвращаем стандартный стиль элемента при уходе курсора
+  element.style.cursor = "default";
+});
